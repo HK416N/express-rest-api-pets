@@ -1,0 +1,19 @@
+info:
+  name: one-pet
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{BASE_URL}}/:petId"
+  params:
+    - name: petId
+      value: recqK1d9u4GS9rgdh
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

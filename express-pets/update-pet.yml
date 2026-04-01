@@ -1,0 +1,29 @@
+info:
+  name: update-pet
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{BASE_URL}}/:petId"
+  params:
+    - name: petId
+      value: recqK1d9u4GS9rgdh
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "fields": {
+          "Name": "dog",
+          "Breed": "boxer",
+          "age": 5
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
